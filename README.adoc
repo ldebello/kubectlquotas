@@ -1,0 +1,24 @@
+= Kubectl Quotas
+
+A very simple library to compute a good value for quotas in a specific environment.
+
+== Build
+
+```
+mvn clean package
+```
+
+== Usage
+
+```
+java -jar target/kubectl-quotas-1.0.0-SNAPSHOT-jar-with-dependencies.jar -n <NAMESPACE>
+```
+
+Output
+
+```
+limits.cpu --> 73
+limits.memory --> 82864
+requests.cpu --> 57
+requests.memory --> 82864
+```
